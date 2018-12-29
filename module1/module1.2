@@ -1,0 +1,284 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "15"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "just_numbers = [2 ,1, 5, 4, 3]\n",
+    "len(just_numbers)\n",
+    "sum(just_numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[5, 4, 3, 2, 1]"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sorted(just_numbers, reverse = True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['два', 'один', 'три']"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "numbers = []\n",
+    "numbers.append('один')\n",
+    "numbers.append('два')\n",
+    "numbers.append('три')\n",
+    "sorted(numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['смотреть сериалы онлайн', 'новости спорта', 'афиша кино', 'курс доллара', 'сериалы этим летом', 'курс по питону', 'сериалы про спорт']\n"
+     ]
+    }
+   ],
+   "source": [
+    "queries_string = \"смотреть сериалы онлайн,новости спорта,афиша кино,курс доллара,сериалы этим летом,курс по питону,сериалы про спорт\"\n",
+    "print( queries_string.split(',') )\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'001_logs_2017-11-01||002_logs_2017-11-02||003_logs_2017-11-03||004_logs_2017-11-04||005_logs_2017-11-05||006_logs_2017-11-06'"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "file_string = \"003_logs_2017-11-03;001_logs_2017-11-01;005_logs_2017-11-05;002_logs_2017-11-02;004_logs_2017-11-04\"\n",
+    "file_list = file_string.split(\";\")\n",
+    "file_list_sorted = sorted(file_list)\n",
+    "file_list_sorted.append(\"006_logs_2017-11-06\")\n",
+    "file_string = \"||\".join(file_list_sorted)\n",
+    "file_string\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'смотреть сериалы онлайн,новости спорта,афиша кино,курс доллара,сериалы этим летом,курс по питону,сериалы про спорт'"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "queriesList = ['смотреть сериалы онлайн', 'новости спорта', 'афиша кино', 'курс доллара', 'сериалы этим летом', 'курс по питону', 'сериалы про спорт']\n",
+    "queriesString = \",\".join(queriesList)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Facebook', 'VK', 'Partner']"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sequence = [ 'Google Adwords', 'Yandex Direct', 'Facebook', 'VK', 'Partner' ]\n",
+    "sequence[2:]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 4, 6, 8, 10]"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "justNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+    "justNumbers[1::2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "Unknown format code '%' for object of type 'str'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-27-7afe7e6db1fc>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0mweekdays\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m[\u001b[0m\u001b[0;34m'понедельник'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'вторник'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'среда'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'четверг'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'пятница'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'суббота'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'воскресенье'\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;32mfor\u001b[0m \u001b[0mday\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mweekdays\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'Сегодня {:.4%}'\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mformat\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mday\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mValueError\u001b[0m: Unknown format code '%' for object of type 'str'"
+     ]
+    }
+   ],
+   "source": [
+    "weekdays = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье']\n",
+    "for day in weekdays:\n",
+    "    print('Сегодня {:.4%}'.format(day))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(10):\n",
+    "    print( i )"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Значение element = 83171, сумма на текущий момент = 83171 \n",
+      "Значение element = 151604, сумма на текущий момент = 234775 \n",
+      "Значение element = 46315, сумма на текущий момент = 281090 \n",
+      "Значение element = 98753, сумма на текущий момент = 379843 \n",
+      "Значение element = 208648, сумма на текущий момент = 588491 \n",
+      "Значение element = 184682, сумма на текущий момент = 773173 \n",
+      "Значение element = 204061, сумма на текущий момент = 977234 \n"
+     ]
+    }
+   ],
+   "source": [
+    "direct_revenue = [83171,151604, 46315, 98753, 208648, 184682, 204061,134911,94791,109076,37254, 224991,36400,149320, 171336, 83854, 206799,180922, 235647, 217546, 200478, 239445, 144901, 26522,177971,148458,154937,196095,140202,189223]\n",
+    "week_1_revenue = direct_revenue[:7]\n",
+    "total_revenue = 0\n",
+    "for day in week_1_revenue:\n",
+    "    total_revenue += day\n",
+    "    print('Значение element = {}, сумма на текущий момент = {} '.format(day, total_revenue))\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
