@@ -1,0 +1,5 @@
+utm_source	utm_medium	sales
+infox	cpc	1534
+smi2	cpm	1495
+infox-action	cpa	735
+rbc	cpc	59

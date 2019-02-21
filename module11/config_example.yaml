@@ -1,0 +1,22 @@
+access_token: g6434uqghoq374gh3qh38ry24orh24h3rjg03q
+
+mysql:
+    host: 10.0.108.8
+    port: 3306
+    database: scoring
+    user: defaultuser
+    password: passw@rd
+
+cities:
+    - Москва
+    - Санкт-Петербург
+    - Волгоград
+    - Новороссийск
+    - Тула
+    - Мурманск
+    - Смоленск
+    - Севастополь
+    - Одесса
+    - Киев
+    - Керчь
+    - Минск
